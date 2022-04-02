@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 
 import AppBar from "@mui/material/AppBar";
@@ -31,7 +31,9 @@ export default function ButtonAppBar() {
           >
             Clothing Recommendation System
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" component={RouterLink} to="/signin">
+            Login
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

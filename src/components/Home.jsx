@@ -1,3 +1,4 @@
+import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 
 import Box from "@mui/material/Box";
@@ -39,7 +40,7 @@ const Home = () => {
           spacing={2}
           justifyContent="center"
         >
-          <Button variant="contained" component={RouterLink} to="/Question">
+          <Button variant="contained" component={RouterLink} to="/question">
             Start
           </Button>
         </Stack>
